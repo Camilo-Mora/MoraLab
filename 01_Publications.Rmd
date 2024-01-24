@@ -5,13 +5,17 @@
   |                                                                                             |
   | :--------------------------- | :----------------------------------------------------------- |
   | **Lab hits**                                                                                    |
-  | ![](images/DiseasePaper.png)   |[Disease paper](../Publications/Mora 001.pdf) <br>  **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
-  | ![](images/Heatwaves.png)      |[Heatwave paper](../Publications/Mora 001.pdf) <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
-  | ![](images/RankHeatPaper.png)      |[Heatwave paper](../Publications/Mora 001.pdf) <br> **Among top 100 most influential climate paper of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list)      
-  
+  | ![](images/DiseasePaper.png)          |[Disease paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br>  **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
+  | ![](images/Heatwaves.png)             |[Heatwave paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
+  | ![](images/RankHeatPaper.png)         |[Heatwave paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Among top 100 most influential papers of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list) 
+  | ![](images/RankTiming.png)             |[Climate departure paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Ranked 8th most influential climate paper of 2013**  <br> by [Carbon Brief](https://www.carbonbrief.org/media/427547/altimetric-1a.png) 
+  | ![](images/top100Timing.png)          |[Climate departure paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Among top 100 most influential papers of 2013**  <br> by [Altmetric](https://www.altmetric.com/top100/2013/)  
+  | ![](images/top100badgeDiscover.png)  |[Number of species paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Among top 100 most influential papers of 2011**  <br> by [Discover magazine](https://www.discovermagazine.com/2012/jan-feb/63) 
 
 
 
+
+.
 
 
 |                                                                                                                                                                                                                                         |
