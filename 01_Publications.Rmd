@@ -5,11 +5,11 @@
   |                                                                                             |
   | :--------------------------- | :----------------------------------------------------------- |
   | **Lab hits**                                                                                    |
-  | ![](images/DiseasePaper.png)          |<a href="Publications/Mora 078.pdf">Disease paper</a> <br> **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
-  | ![](images/Heatwaves.png)             |<a href="Publications/Mora 059.pdf">Heatwave paper</a> <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
-  | ![](images/RankHeatPaper.png)         |<a href="Publications/Mora 059.pdf">Heatwave paper</a> <br> **Among top 100 most influential papers of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list) 
-  | ![](images/RankTiming.png)            |[Climate departure paper](/MoraLab/Publications/Mora 038.pdf) <br> **Ranked 8th most influential climate paper of 2013**  <br> by [Carbon Brief](https://www.carbonbrief.org/media/427547/altimetric-1a.png) 
-  | ![](images/top100Timing.png)          |[Climate departure paper](/Publications/Mora 038.pdf) <br> **Among top 100 most influential papers of 2013**  <br> by [Altmetric](https://www.altmetric.com/top100/2013/)  
+  | ![](images/DiseasePaper.png)          |<a href="Publications/Mora 078.pdf">Disease paper</a>            <br> **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
+  | ![](images/Heatwaves.png)             |<a href="Publications/Mora 059.pdf">Heatwave paper</a>           <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
+  | ![](images/RankHeatPaper.png)         |<a href="Publications/Mora 059.pdf">Heatwave paper</a>           <br> **Among top 100 most influential papers of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list) 
+  | ![](images/RankTiming.png)            |<a href="Publications/Mora 038.pdf">Climate departure paper</a>  <br> **Ranked 8th most influential climate paper of 2013**  <br> by [Carbon Brief](https://www.carbonbrief.org/media/427547/altimetric-1a.png) 
+  | ![](images/top100Timing.png)          |<a href="Publications/Mora 038.pdf">Climate departure paper</a>  <br> **Among top 100 most influential papers of 2013**  <br> by [Altmetric](https://www.altmetric.com/top100/2013/)  
   | ![](images/top100badgeDiscover.png)   |[Number of species paper](https://journals.plos.org/plosbiology/article/info:doi/10.1371/journal.pbio.1001127) <br> **Among top 100 most influential papers of 2011**  <br> by [Discover magazine](https://www.discovermagazine.com/2012/jan-feb/63) 
 
 
@@ -20,8 +20,10 @@
 
 |                                                                                                                                                                                                                                         |
 |:--|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-
-
+| 79|  Amenda A , Swifta S, Darcy JL, Belcaidc M, Nelson C, Buchanan J, Cetraro N, Fraiola K, Frank K, Kajihara K, McDermot T, McFall-Ngai M, Medeiros M, Mora C, Nakayama K, Nguyen N, Rollins R, Sadowski P, Sparagon W, Tefita M, Yewa J, Yogi D, Hynson NA (2022) A ridge-to-reef ecosystem microbial census reveals environmental reservoirs for animal and plant microbiomes. Proceedings of the National Academy of Sciences USA 119, e2204146119
+|   |
+| 78| Mora C, McKenzie T, Gaw SM, Dean JM, von Hammerstein H, Knudson TA, Setter RO, Smith C, Webster KM, Patz JA, Franklin EC (2022) Over half of known human pathogenic diseases can be aggravated by climate change. Nature Climate Change 12, 869–875.
+|   |
 | 77| Lohrey S, Mora C, Reckien D, Creutzig FS (2021) Deadly Heat Exposure in an Urbanized World,EarthArXiv.
 |   |
 | 76| McDowell K, Zhong Y, Webster K, Gonzalez HJ, Trimble AZ, Mora C (2021) Comprehensive temperature controller with internet connectivity for plant growth experiments, *HardwareX*, 10, e00238 [PDF](/Publications/Mora 001.pdf)  
