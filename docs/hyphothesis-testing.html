@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>7. Hyphothesis testing | Camilo Mora, Ph.D.</title>
+  <meta name="description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
+  <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="7. Hyphothesis testing | Camilo Mora, Ph.D." />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="7. Hyphothesis testing | Camilo Mora, Ph.D." />
+  
+  <meta name="twitter:description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="regression.html"/>
+<link rel="next" href="one-sample-test.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a>MoraLab</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="" data-path="class-expectations.html"><a href="class-expectations.html"><i class="fa fa-check"></i>Class expectations</a>
+<ul>
+<li class="chapter" data-level="" data-path="scientific-method.html"><a href="scientific-method.html"><i class="fa fa-check"></i>1. Scientific method</a></li>
+<li class="chapter" data-level="" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i>2. Data manipulation</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-manipulation.html"><a href="data-manipulation.html#data-display"><i class="fa fa-check"></i>3. Data display</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="descriptive-stats.html"><a href="descriptive-stats.html"><i class="fa fa-check"></i>4. Descriptive stats</a></li>
+<li class="chapter" data-level="" data-path="correlation.html"><a href="correlation.html"><i class="fa fa-check"></i>5. Correlation</a></li>
+<li class="chapter" data-level="" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i>6. Regression</a></li>
+<li class="chapter" data-level="" data-path="hyphothesis-testing.html"><a href="hyphothesis-testing.html"><i class="fa fa-check"></i>7. Hyphothesis testing</a></li>
+<li class="chapter" data-level="" data-path="one-sample-test.html"><a href="one-sample-test.html"><i class="fa fa-check"></i>8. One sample test</a>
+<ul>
+<li class="chapter" data-level="" data-path="one-sample-test.html"><a href="one-sample-test.html#two-sample-test"><i class="fa fa-check"></i>9. Two sample test</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="more-than-two-sample-test.html"><a href="more-than-two-sample-test.html"><i class="fa fa-check"></i>10. More than two sample test</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://www.soc.hawaii.edu/mora/index.html"><img src="images/MoraLab.png" width="270"></a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Camilo Mora, Ph.D.</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="hyphothesis-testing" class="section level2 unnumbered hasAnchor">
+<h2>7. Hyphothesis testing<a href="hyphothesis-testing.html#hyphothesis-testing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>You will know how to: State hypotheses,</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="one-sample-test.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/Camilo-Mora/GEO380/blob/main/00-Expectations.Rmd",
+"text": null
+},
+"download": ["Moralab.pdf", "Moralab.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+},
+"highlight": "pigments"
+});
+});
+</script>
+
+</body>
+
+</html>

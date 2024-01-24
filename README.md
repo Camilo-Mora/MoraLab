@@ -1,2 +1,1 @@
-# MoraLab
- Laboratory of Camilo Mora, Ph.D. at the University of Hawaii Manoa
+This is beginners entry level course on statistics using R

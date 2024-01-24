@@ -1,0 +1,13 @@
+bookdown::gitbook:
+  includes:
+  split_by: section+number
+  css: style.css
+  config:
+    highlight: pigments
+    toc:
+      before: |
+        <li><a>MoraLab</a></li>
+      after: |
+        <li><a href="http://www.soc.hawaii.edu/mora/index.html"><img src="images/MoraLab.png" width="270"></a></li>
+    download: ["pdf", "epub"]
+

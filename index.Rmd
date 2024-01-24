@@ -1,0 +1,30 @@
+---
+title: <font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font>
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+description: "Research lab of Camilo Mora at the University of Hawaii Manoa"
+---
+
+#  Welcome {-}
+
+Welcome to the laboratory of Camilo Mora at the University of Hawaii Manoa. 
+
+## what we do? {-}
+
+Over the year we have work 
+
+![](images/Camilo.jpeg)
+
+# Courses {-}
+
+
+  
+  |                                                                                             |
+  | :--------------------------- | :----------------------------------------------------------- |
+  | ![](images/Statistics.png)   |**GEO380 Statistics**  This is an introductory level course on basic statistics, and coding in R.   [URL](https://camilo-mora.github.io/GEO380/)                             |
+  | ![](images/Species.png)      |**GEO309 Biogeography** Overview about the general patterns of the distribution of life on Earth.   [URL](https://camilo-mora.github.io/GEO309/)                             |
+  | ![](images/Impacts.png)      |**GEO302 SUST314 Global Environmental Issues** Overview about humanity's assaults on nature.        [URL](https://camilo-mora.github.io/GEO302/)                             | 
+  | ![](images/Analytics.png)    |**GEO710 Methods for Large Scale Analyses** How to publish high impact papers on the cheap.         [URL](https://camilo-mora.github.io/MethodsForLargeScaleAnalyses/)       | 
+  
+
+
