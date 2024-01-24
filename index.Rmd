@@ -9,7 +9,7 @@ description: "Research lab of Camilo Mora at the University of Hawaii Manoa"
 
 Welcome to the laboratory of Camilo Mora at the University of Hawaii Manoa. 
 
-## what we do? {-}
+** what we do? **
 
 Over the year we have work 
 
