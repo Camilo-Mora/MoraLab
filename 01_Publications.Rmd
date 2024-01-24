@@ -8,9 +8,9 @@
   | ![](images/DiseasePaper.png)          |<a href="Publications/Mora 078.pdf">Disease paper</a> <br> **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
   | ![](images/Heatwaves.png)             |<a href="Publications/Mora 059.pdf">Heatwave paper</a> <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
   | ![](images/RankHeatPaper.png)         |<a href="Publications/Mora 059.pdf">Heatwave paper</a> <br> **Among top 100 most influential papers of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list) 
-  | ![](images/RankTiming.png)             |[Climate departure paper](/Publications/Mora 038.pdf) <br> **Ranked 8th most influential climate paper of 2013**  <br> by [Carbon Brief](https://www.carbonbrief.org/media/427547/altimetric-1a.png) 
+  | ![](images/RankTiming.png)            |[Climate departure paper](/MoraLab/Publications/Mora 038.pdf) <br> **Ranked 8th most influential climate paper of 2013**  <br> by [Carbon Brief](https://www.carbonbrief.org/media/427547/altimetric-1a.png) 
   | ![](images/top100Timing.png)          |[Climate departure paper](/Publications/Mora 038.pdf) <br> **Among top 100 most influential papers of 2013**  <br> by [Altmetric](https://www.altmetric.com/top100/2013/)  
-  | ![](images/top100badgeDiscover.png)  |[Number of species paper](https://github.com/Camilo-Mora/MoraLab/tree/main/Publications/Mora 001.pdf) <br> **Among top 100 most influential papers of 2011**  <br> by [Discover magazine](https://www.discovermagazine.com/2012/jan-feb/63) 
+  | ![](images/top100badgeDiscover.png)   |[Number of species paper](https://journals.plos.org/plosbiology/article/info:doi/10.1371/journal.pbio.1001127) <br> **Among top 100 most influential papers of 2011**  <br> by [Discover magazine](https://www.discovermagazine.com/2012/jan-feb/63) 
 
 
 
