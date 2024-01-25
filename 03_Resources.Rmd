@@ -1,0 +1,15 @@
+# Resources {-}
+
+Tools, methods and codes developed by the Mora lab
+
+  |                                                                                             |
+  | :--------------------------- | :----------------------------------------------------------- |
+  | ![](images/Carbon Neutrality Challenge.jpg)   |**The Carbon Neutrality Challenge**  Interactive tool to calculate how many native trees you need to plant to offset your carbon emissions.  [URL](www.gocarbonneutral.org)                             |
+  | ![](images/BreathingPot.png)      |**Mora's sheet Pot** Development of a pot system to increase seedling quality. [URL](https://github.com/Camilo-Mora/MorasPot)                             |
+  | ![](images/DeepPot tray.png)      |**Mora's tray** Tray to improve the quality of life of seedlings at the nursery. [URL](https://github.com/Camilo-Mora/Tray)                             | 
+  | ![](images/Catcher.jpg)    |**RainCatcher** Affordable and re-usable device to collect rainwater for irrigation of individual trees. [URL](https://github.com/Camilo-Mora/WaterCathment)       | 
+  | ![](images/Koa Threshing machine.png)   |**KOA threshind machine**  Machine developed for the purpose of threshing thousands of koa seeds in a few minutes. [URL](https://camilo-mora.github.io/GEO380/)                             |
+  | ![](images/EZW10.jpg)      |**EZW10 Easy Watering 10** Electronic irrigation system that allows to customize irrigation programs for individual trees. [URL](https://camilo-mora.github.io/GEO309/)                             |
+  | ![](images/RainWaterCalculator.png)      |**RainWater catchment calculator** Using daily rain data for any given location, the area of your catchment and your water demands, this app determines if your rain catchment will go dry. [URL](https://camilo-mora.github.io/GEO302/)                             | 
+  | ![](images/Carbon%20Calculator.png)    |**Tree CO2 sequestration calculator** Using several published equations, this app estimates the amount of  atmospheric CO2 that can be taken and stored by a tree over its life time. [URL](https://camilo-mora.github.io/MethodsForLargeScaleAnalyses/)       | 
+  | ![](images/Forex.png)    |**Financial algos** Compilation of algorithms for assessment of financial markets. [URL](https://camilo-mora.github.io/BookStockIndicators/index.html)       | 

@@ -1,5 +1,6 @@
 # On the News {-}
 
+News coverage of our work.
 
 <p><b style="font-size:Large; color: red;">Invited Op-Ed for The Hill:</b>
 	<a href="https://thehill.com/opinion/energy-environment/553955-putting-the-brakes-on-cryptocurrencies-well-done-elon-musk#bottom-story-socials" target="_blank" class="LinkPDF">

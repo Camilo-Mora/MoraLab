@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>MoraLab</title>
+  <title>MoraLab | Moralab.knit</title>
   <meta name="description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
   <meta name="generator" content="bookdown 0.37 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="MoraLab" />
+  <meta property="og:title" content="MoraLab | Moralab.knit" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="MoraLab" />
+  <meta name="twitter:title" content="MoraLab | Moralab.knit" />
   
   <meta name="twitter:description" content="Research lab of Camilo Mora at the University of Hawaii Manoa" />
   
@@ -74,10 +74,11 @@
 <li><a>MoraLab</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font></a></li>
 <li class="chapter" data-level="" data-path="courses.html"><a href="courses.html"><i class="fa fa-check"></i>Courses</a></li>
 <li class="chapter" data-level="" data-path="publications.html"><a href="publications.html"><i class="fa fa-check"></i>Publications</a></li>
 <li class="chapter" data-level="" data-path="on-the-news.html"><a href="on-the-news.html"><i class="fa fa-check"></i>On the News</a></li>
+<li class="chapter" data-level="" data-path="resources.html"><a href="resources.html"><i class="fa fa-check"></i>Resources</a></li>
 <li class="divider"></li>
 <li><a href="http://www.soc.hawaii.edu/mora/index.html"><img src="images/MoraLab.png" width="270"></a></li>
 
@@ -90,7 +91,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font></a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
           </h1>
         </div>
 
@@ -98,15 +99,286 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title"><font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font></h1>
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="moralab" class="section level1 unnumbered hasAnchor">
+<h1><font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font><a href="index.html#moralab" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Over the years we have worked on reef fishes, whales, bacteria, fungi, heatwaves, cardiovascular diseases, Bitcoin, rainbows, and a few other things. What they all have in common? Numbers, lots of them.
+<br></p>
+<p>My lab specializes on any problem that can be tackled with big data analytics.</p>
+<p><img src="images/BigData.jpg" /></p>
+<p>Another major focus of our work is forest restoration via the Carbon Neutrality Challenge, which is a project spearheaded by my daughter Asryelle Mora, in which any individual can offset their carbon emissions by planting trees.
+<img src="images/Camilo.jpeg" /></p>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<pre><code>&lt;script src=&quot;http://code.highcharts.com/highcharts.js&quot;&gt;&lt;/script&gt;</code></pre>
+<script>
+function myFunction() {
+var AccumulatedCO2 = 0;
+var TreeDiameter = document.getElementById("TreeDiameter").value;
+var Results = [];
+var CO2 = "";
+var d = new Date();
+var YearPlanted = d.getFullYear();
+var YearOfCalculation = d.getFullYear();
+
+//--start--adjust for the units of the tree diameter selected by the user
+var UnitSelected = document.getElementById('Units').options[document.getElementById('Units').selectedIndex].value;
+if (UnitSelected == 1) {
+var TreeDiameter = TreeDiameter / 0.393701;
+} else {
+var TreeDiameter = TreeDiameter;
+}
+//--end--adjust for the units of the tree diameter selected by the user
+
+
+for (i = 0; i <= 85; i++) {
+YearOfCalculation = i + 2015;
+if (YearOfCalculation >= YearPlanted) {
+
+//Body mass (kg dry above groung matter) from Chave et al (2001):
+BodyMass = 0.0998 * (Math.pow(TreeDiameter, 2.5445));
+
+//Growth Rate (kg dry above groung matter/ plant /yr) from Niklas & Enquist (2001):
+GrowthRate = 0.208 * (Math.pow(BodyMass, 0.763));
+
+//dK/dy Above ground, this is the rate of production at each year assuming log decline:
+dKdY = (Math.exp(1 - (((GrowthRate * Math.exp(1)) * (YearOfCalculation - YearPlanted)) / BodyMass)) / Math.exp(1)) * (GrowthRate * Math.exp(1));
+
+//Adding Below ground Using Cairns et al (1997) factor of 24% of above ground biomass:
+dKdYT = dKdY * 1.24;
+
+//Carbon content Using Kirby & Potvin (2007) factor of 47% of total dry weight:
+Carbon = dKdYT * 0.47;
+
+//CO2 sequestration.Conversion of Carbon in treee to CO2:
+CO2 = Carbon * 3.6663;
+
+//adds CO2 over the years:
+AccumulatedCO2 = AccumulatedCO2 + CO2;
+
+//Generates data.frame that includes year:
+Results[i] = Math.round(AccumulatedCO2 * 10) / 10;
+
+} else {
+Results[i] = 0;
+}
+
+}
+
+
+document.getElementById("demo").innerHTML = "This tree will sequester " + parseInt(AccumulatedCO2) + " Kg of CO2 over its life time";
+
+
+setTimeout(function() {
+
+// generates a variable with the data to be plotted in the x-y chart
+var Results1 = Results;
+
+
+$('#container').highcharts({
+
+chart: {
+    type: 'scatter',
+    zoomType: 'x'
+},
+title: {
+    text: 'Projected CO2 stored by this tree'
+},
+tooltip: {
+    headerFormat: '<b></b>',
+    pointFormat: "It will sequester {point.y}kg by {point.x:%Y}",
+    hideDelay: 1
+},
+xAxis: {
+    type: 'datetime',
+    title: {
+        text: 'Year'
+    }
+},
+yAxis: {
+    title: {
+        text: 'CO2 sequestered (kg)'
+    },
+    min: 0
+},
+legend: {
+    enabled: false
+},
+plotOptions: {
+    area: {
+        fillColor: {
+            linearGradient: {
+                x1: 0,
+                y1: 0,
+                x2: 0,
+                y2: 1
+            },
+            stops: [
+                [0, Highcharts.getOptions().colors[0]],
+                [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+            ]
+        },
+        marker: {
+            radius: 2
+        },
+        lineWidth: 1,
+        states: {
+            hover: {
+                lineWidth: 1
+            }
+        },
+        threshold: null
+    }
+},
+
+series: [{
+    type: 'area',
+    name: 'Cummulative CO2 stored',
+    pointInterval: 365 * 24 * 3600000,
+    pointStart: Date.UTC(2015, 0, 1),
+    data: Results1
+}]
+});
+
+}, 1);
+
+}
+</script>
+</head>
+<body>
+<div class="main1">
+<pre><code>    &lt;div class=&quot;header&quot;&gt;
+
+        &lt;div class=&quot;header_resize&quot;&gt;
+            &lt;div class=&quot;logo&quot;&gt;
+                &lt;br&gt;
+                &lt;h1&gt;Mora&lt;span&gt;Lab&lt;/span&gt;&lt;/h1&gt;
+                &lt;font size=&quot;1.9&quot; color=&quot;white&quot;&gt;&lt;i&gt;making the world a better place one paper at a time&lt;/i&gt;&lt;/font&gt;
+                &lt;br&gt;
+                &lt;br&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;menu_nav&quot;&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;&lt;span&gt;Home&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Team.html&quot;&gt;&lt;span&gt;Team&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Publications.html&quot;&gt;&lt;span&gt;Publications&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Courses.html&quot;&gt;&lt;span&gt;Courses&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;PressRoom.html&quot;&gt;&lt;span&gt;Press&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;OnTheNews.html&quot;&gt;&lt;span&gt;In the news&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Resources.html&quot;&gt;&lt;span&gt;Resources&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href=&quot;Carbon Neutrality Project&quot;&gt;&lt;span&gt;CO2 Neutrality&lt;/span&gt;&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;div class=&quot;content&quot; style=&quot;margin-left: 0px; margin-top: -6px;&quot;&gt;
+
+    &lt;div class=&quot;content_resize&quot;&gt;</code></pre>
+<table width="900" border="0" align="center" style="pointer-events: auto;">
+<pre><code>&lt;tr&gt;
+    &lt;td colspan=&quot;2&quot; align=&quot;center&quot;&gt;
+        &lt;br&gt;&lt;br&gt;
+        &lt;strong&gt;&lt;span style=&quot;font-size:20px; color: #006;&quot;&gt;Tree carbon storage calculator&lt;br&gt;&lt;/span&gt;&lt;/strong&gt;
+        by Camilo Mora, Ph.D.
+        &lt;br&gt;&lt;br&gt;
+    &lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+    &lt;td width=&quot;700&quot; colspan=&quot;2&quot; valign=&quot;top&quot;&gt;
+
+        &lt;p style=&quot;text-align:center;&quot;&gt;
+            &lt;img src=&quot;images/Carbon sequestration.png&quot; width=&quot;900&quot;&gt;
+
+            &lt;br&gt;
+        &lt;/p&gt;
+
+    &lt;/td&gt;
+
+&lt;/tr&gt;
+
+
+
+&lt;tr&gt;
+    &lt;td width=&quot;700&quot; colspan=&quot;2&quot; valign=&quot;top&quot;&gt;
+        &lt;p line-height: 1.2; style=&quot;font-size:18px&quot;&gt;
+            &lt;strong&gt;Summary: &lt;/strong&gt; Climate change is truly a terrifying thing. By increasing the amount of CO2 in the atmosphere, we are increasing the temperature of the planet, which in turn is increasing drought, heatwaves and wildfires in some areas, and extreme precipitation and floods in others. Add sea-level rise to the mixture and you get the picture. All these climatic hazards have the capacity to make humanity sicker, hungrier, thirsty, homeless, poor, and unsafe. 
+            
+            &lt;br&gt;&lt;br&gt;Remarkably, all these disasters can be traced back to a simple unbalance of the Earth&#39;s atmospheric CO2 concentration: we produce more CO2 than it can be removed.
+            
+            From this perspective, averting the threat of climate change will require some degree of luck discovering new types of &quot;green&quot;/zero-emissions energy, or a considerable improvement of existing methods that capture carbon emissions; and trees, may be just what we need. Trough photosynthesis, trees break some of the “nasty” CO2 we produce into carbon, which they store, and oxygen, which they release: a win-win.
+             &lt;br&gt;&lt;br&gt;
+            This app has been developed using several published equations to estimate the amount of CO2 that can be stored as carbon in a tree.
+        
+            
+    &lt;br&gt;&lt;br&gt;
+    &lt;strong&gt;Background: &lt;/strong&gt;  Firsts, we need to start by understanding &quot;allometric&quot; relationships. Basically, as any individual grows, parts of its body will most likely correlate with other body parts; like the length of your arms relates to the length of your legs. Thus, by knowing a single attribute of the individual, you can predict other attributes of that individual. &lt;br&gt;&lt;br&gt;
+        
+    In the case of trees, Chave et al (2001) collected data from 12 different studies that predicted tree above ground biomass by simply knowing the tree Diameter at Breast Height or so called &quot;DBH&quot;. In their article, they reported 12 mathematical equations, which I display below:
+    &lt;p style=&quot;text-align:center;&quot;&gt;
+                            &lt;img src=&quot;images/Body mass.png&quot; width=&quot;700&quot; align=&quot;center&quot;&gt;&lt;br&gt; Above ground tree mass predictions based on tree diameter.
+                            &lt;br&gt;
+                        &lt;/p&gt;        
+    Using multi-model averaging from the studies reported by Chave et al (2001), then one can predict above ground dry body mass as:        
+
+    &lt;br&gt;&lt;br&gt;         
+   
+            
+    &lt;p style=&quot;text-align:center;&quot;&gt;Body Mass =0.0998 * DBH^2.5445  &lt;/p&gt;       
+    
+        &lt;br&gt;         
+   
+      In turn, Niklas &amp; Enquist (2001) found that one can use tree body mass to predict their growth rate, as:
+        &lt;br&gt; &lt;br&gt; 
+        &lt;p style=&quot;text-align:center;&quot;&gt;Growth Rate =0.208 * Body Mass^0.763  &lt;/p&gt;    
+        
+        
+       &lt;br&gt;    
+       By knowing the weight of a tree, and their growth rate, one could predict the weight of the tree at different time intervals. Just like a pediatrician is able to predict the approximate weight of a child at different ages.</code></pre>
+<p><br><br>
+Until now, all weight calculations are for the part of the tree that one sees above ground. It turns out, that Cairns et al (1997) found that below ground biomass is about 24% the weight of the tree above ground.
+<br><br><br />
+So we need to multiply the tree mass from Chave et al . (2001) by 1.24. That is, the weight of the tree above ground, plus the 0.24 fraction below ground.
+<br><br><br />
+Up to this moment, we have been able to calculate the weight of the tree (below and above ground), but not all that weight is carbon.
+<br><br> As one may expect, the tissue of the tree has many other chemical elements. Lucky for us, Kirby &amp; Potvin (2007) found that 47% of the dry weight of a tree is carbon. So, we can simply multiply our estimated weight of a tree by 0.47 to know the approximated carbon in the given tree.
+<br><br>
+Ok, we now have a good approximation to the carbon stored in a tree. But carbon is different from CO2. CO2 has two molecules of oxygen, so it is heavier. The molecular weight of carbon is 12.0107, while that of oxygen is 15.999. So the molecular weight of CO2 is 44.0087 or 3.6663 times heavier that carbon alone.</p>
+<p><br><br> So to estimate the CO2 that could be taken from the atmosphere by a tree, one needs to multiply the weight of the carbon in the tree by 3.6663.</p>
+<p><br><br>The result is a time series projection of the CO2 likely to be removed by a tree from the atmosphere and stored in its body by simply knowing the diameter of the tree.</p>
+<pre><code>&lt;br&gt;&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt; </code></pre>
+<p><strong><span style="font-size:20px; color: #006;">Tree CO2 sequestration calculator</span></strong><br />
+<br><br><br />
+Tree diameter at Breast Height: <input type="number" id="TreeDiameter" value=""></p>
+<p><select name="Units" id="Units">
+<option value="1">Inches</option>
+<option value="2">Centimeters</option>
+</select></p>
+<button onclick="myFunction()">
+Calculate
+</button>
+<p id="demo">
+</p>
+<div id="container" style="width:100%; height:300px;">
+
 </div>
-<div id="welcome" class="section level1 unnumbered hasAnchor">
-<h1>Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Welcome to the laboratory of Camilo Mora at the University of Hawaii Manoa.</p>
-<p>** what we do? **</p>
-<p>Over the year we have work</p>
-<p><img src="images/Camilo.jpeg" /></p>
+<p><br>The Tree CO2 sequestration calculator was developed by Camilo Mora.</p>
+<p><br><br><br><br><br><br></p>
+
 </div>
             </section>
 
