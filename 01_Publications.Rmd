@@ -7,7 +7,7 @@
   
   |                                                                                             |
   | :--------------------------- | :----------------------------------------------------------- |
-  | **Lab hits**                                                                                    |
+  | **Milestones**                                                                                    |
   | ![](images/DiseasePaper.png)          |<a href="Publications/Mora 078.pdf">Disease paper</a>            <br> **Ranked 5th most influential climate paper of 2022**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2022/)
   | ![](images/Heatwaves.png)             |<a href="Publications/Mora 059.pdf">Heatwave paper</a>           <br> **Ranked 3th most influential climate paper of 2017**  <br> by [Carbon Brief](https://www.carbonbrief.org/analysis-the-climate-papers-most-featured-in-the-media-in-2017/)                            
   | ![](images/RankHeatPaper.png)         |<a href="Publications/Mora 059.pdf">Heatwave paper</a>           <br> **Among top 100 most influential papers of 2017**  <br> by [Altmetric](https://www.altmetric.com/top100/2017/#list) 
