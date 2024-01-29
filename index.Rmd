@@ -8,6 +8,7 @@ description: "Research lab of Camilo Mora at the University of Hawaii Manoa"
 # <font size="5" COLOR="black"><i>Mora</i></font><font size="5" COLOR="blue"><i>Lab</i></font> {-}
 
 
+Welcome to the laboratory of Camilo Mora at the University of Hawaii at Manoa.
 
 Over the years we have worked on reef fishes, whales, bacteria, fungi, heatwaves, cardiovascular diseases, Bitcoin, rainbows, and a few other things. What they all have in common? Numbers, lots of them.
 <br>
